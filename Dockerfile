@@ -2,8 +2,8 @@
 FROM nginx:alpine
 
 # Copy your HTML/CSS files to the appropriate location in the container
-COPY index.html /usr/share/nginx/html
-COPY style.css /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
 
 # Expose the default port used by Nginx (port 80)
 EXPOSE 80
